@@ -1,0 +1,110 @@
+* {
+    font-family: 'Outfit', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color:hsl(238, 50%, 10%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    background-color: hsl(240, 31%, 13%);
+    width: 350px;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+main .images{
+    position: relative;
+}
+
+main .images .overlay{
+    background-color: rgb(139, 213, 218);
+    opacity: 0.5;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+    visibility: hidden;
+    transition-duration: 0.1s;
+}
+
+main .images:hover .image-view,
+main .images:hover .overlay{
+    visibility: visible;
+}
+
+.main .image-view {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    transition-duration: 0.1s;
+}
+
+.image-first{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+h1{
+    color: hsl(0, 0%, 100%);
+    font-size: 17pt;
+    font-weight: 600;
+    margin-top: 15px;
+    transition-duration: 0.1s;
+}
+
+h1:hover{
+    color: rgb(139, 213, 218);
+}
+
+p{
+    color: rgb(193, 196, 196);
+    font-weight: 100;
+    font-size: 12pt;
+    margin-top: 15px;
+    line-height: 1.5;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.eth{
+    display: flex;
+    align-items: center;
+    color: rgb(139, 213, 218);
+    font-size: 10pt;
+    font-weight: 600;
+}
+
+.line {
+	width: 310px;
+	border-top: 0.1px solid rgb(23, 42, 70);
+	margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.footer{
+    display: flex;
+	align-items: center;
+	gap: 20px;
+	text-align:center
+}
+
+.avatar{
+    max-width: 10%;
+}
